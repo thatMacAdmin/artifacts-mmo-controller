@@ -1,3 +1,7 @@
+# artifacts-mmo-controller
+
+A monorepo for the GeekZoo Artifacts MMO controller
+
 # Overview
 This is a controller for the game Artifacts MMO. The goal of this is to allow the player to automate as many actions as possible. 
 
