@@ -26,6 +26,8 @@
 <encore_app_structure>
 <overview>
 Encore uses a monorepo design where one Encore app contains the entire backend application. This enables features like distributed tracing and Encore Flow through a unified application model.
+
+There is also a frontend folder that contains our SvelteKit frontend.
 </overview>
 
 <core_concepts>
@@ -41,18 +43,23 @@ Services are defined as Go packages containing API definitions, optional databas
 </description>
 
 <directory_structure>
-<root>/app-name
-    <file>encore.app</file>
-    <service name="service1">
-        <folder>migrations
-            <file>1_create_table.up.sql</file>
-        </folder>
-        <file>service1.go</file>
-        <file>service1_test.go</file>
-    </service>
-    <service name="service2">
-        <file>service2.go</file>
-    </service>
+<root>/artifacts-mmo-client
+    <folder>backend
+        <file>encore.app</file>
+        <service name="service1">
+            <folder>migrations
+                <file>1_create_table.up.sql</file>
+            </folder>
+            <file>service1.go</file>
+            <file>service1_test.go</file>
+        </service>
+        <service name="service2">
+            <file>service2.go</file>
+        </service>
+    </folder>
+    <folder>frontend
+        <folder>src</folder>
+    </folder>
 </root>
 </directory_structure>
 </service_definition>
